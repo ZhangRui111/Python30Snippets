@@ -45,11 +45,14 @@ print(lst)
 dicts = {'c': 4, 'd': 3, 'b': 5, 'f': 1, 'g': 0, 'e': 2, 'a': 6}
 print(dict(sorted(dicts.items(), key=None)))
 print(dicts)
+print()
 
 dicts = {'c': 4, 'd': 3, 'b': 5, 'f': 1, 'g': 0, 'e': 2, 'a': 6}
 print(dict(sorted(dicts.items(), key=lambda item: item[1])))
 print(dicts)
+print()
 
 dicts = {'c': 4, 'd': 3, 'b': 5, 'f': 1, 'g': 0, 'e': 2, 'a': 6}
 print(dict(sorted(dicts.items(), key=lambda item: - item[1])))
 print(dicts)
+print()
