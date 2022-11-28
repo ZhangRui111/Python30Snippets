@@ -13,3 +13,8 @@ print(capitalize('fooBar'))
 # >>> 'FooBar'
 print(capitalize('fooBar', True))
 # >>> 'Foobar'
+
+# -------------------- more --------------------
+# title(): Capitalizes the first letter of every word in a string.
+print('hello world!'.title())
+# >>> 'Hello World!'
