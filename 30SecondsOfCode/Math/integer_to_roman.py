@@ -30,6 +30,7 @@ def integer_to_roman_numeral(num):
 print(integer_to_roman_numeral(3))  # 'III'
 print(integer_to_roman_numeral(11))  # 'XI'
 print(integer_to_roman_numeral(1998))  # 'MCMXCVIII'
+print(integer_to_roman_numeral(2998))  # 'MMCMXCVIII'
 
 # -------------------- more --------------------
 # divmod(x, y): Return the tuple (x//y, x%y).

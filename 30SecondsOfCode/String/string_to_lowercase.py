@@ -35,4 +35,9 @@ print('Straße'.upper().casefold() == 'Straße'.casefold())
 # upper()
 # The upper() method returns a string where all characters are in upper case.
 # Symbols and Numbers are ignored.
-print("Hello my friends".upper())
+print("Hello my friends".upper())  # HELLO MY FRIENDS
+# title()
+# The title() method converts the first character in each word to uppercase
+# and the remaining characters to lowercase in the string and returns a new
+# string.
+print("Hello my friends".title())  # Hello My Friends
