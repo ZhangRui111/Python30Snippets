@@ -13,4 +13,5 @@ print(rgb)
 
 # -------------------- more --------------------
 # 1. The hexadecimal color code is corresponding to its RGB channels
-# 2. int(num, base=10)  # base must be >= 2 and <= 36, or 0
+# 2. int(obj, base=10)  # base must be >= 2 and <= 36, or 0
+#    Python int() function Return decimal (base-10) representation of x.
