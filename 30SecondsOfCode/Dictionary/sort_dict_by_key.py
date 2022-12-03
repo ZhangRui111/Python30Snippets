@@ -4,7 +4,8 @@ Sorts the given dictionary by key.
 
 
 def sort_dict_by_key(obj: dict, reverse: bool = False):
-    # return dict(sorted(obj.items(), reverse=reverse, key=lambda item: item[0]))
+    # return dict(sorted(obj.items(), reverse=reverse,
+    #                    key=lambda item: item[0]))
     return dict(sorted(obj.items(), reverse=reverse))
 
 

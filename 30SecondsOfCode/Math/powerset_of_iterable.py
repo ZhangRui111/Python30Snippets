@@ -53,3 +53,6 @@ res1 = list(chain(li))
 res2 = list(chain.from_iterable(li))
 print("using chain :", res1, end="\n")
 print("using chain.from_iterable :", res2)
+# >>> using chain : ['ABC', 'DEF', 'GHI', 'JKL']
+# >>> using chain.from_iterable : ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I',
+#     'J', 'K', 'L']
