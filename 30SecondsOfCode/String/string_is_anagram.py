@@ -17,6 +17,8 @@ print(is_anagram('#anagram', 'Nag a ram!'))
 # >>> True
 
 # -------------------- more --------------------
+print('-' * 40)
+
 # 1. str.isalnum()
 # Return True if the string is an alpha-numeric string, False otherwise.
 #

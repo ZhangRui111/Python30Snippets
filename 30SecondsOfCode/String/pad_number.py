@@ -32,6 +32,13 @@ print("a1b2c3".rjust(8, '+'))
 print("{: >8}".format("a1b2c3"))
 print("{:0>8}".format("a1b2c3"))
 print("{:+>8}".format("a1b2c3"))
+# >>> 00a1b2c3
+# >>>   a1b2c3
+# >>> 00a1b2c3
+# >>> ++a1b2c3
+# >>>   a1b2c3
+# >>> 00a1b2c3
+# >>> ++a1b2c3
 
 print("Right-padding:")
 print("a1b2c3".ljust(8))
@@ -40,3 +47,9 @@ print("a1b2c3".ljust(8, '+'))
 print("{: <8}".format("a1b2c3"))
 print("{:0<8}".format("a1b2c3"))
 print("{:+<8}".format("a1b2c3"))
+# >>> a1b2c3
+# >>> a1b2c300
+# >>> a1b2c3++
+# >>> a1b2c3
+# >>> a1b2c300
+# >>> a1b2c3++

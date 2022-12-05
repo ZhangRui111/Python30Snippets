@@ -7,7 +7,7 @@ def split_lines(s):
     return s.split('\n')
 
 
-print(split_lines('This\nis a\nmultiline\nstring.\n'))
-# >>> ['This', 'is a', 'multiline', 'string.' , '']
-print('This\nis a\nmultiline\nstring.\n'.splitlines())
-# >>> ['This', 'is a', 'multiline', 'string.']
+print(split_lines('\nThis\nis a\nmultiline\nstring\n'))
+# >>> ['', 'This', 'is a', 'multiline', 'string', '']
+print('\nThis\nis a\nmultiline\nstring\n'.splitlines())
+# >>> ['', 'This', 'is a', 'multiline', 'string']

@@ -57,6 +57,7 @@ matchObj = re.match(r'(.*) are (.*?) .*', "Cats are smarter than dogs",
                     flags=re.M | re.I)
 if matchObj:
     print("matchObj.group() : ", matchObj.group())
+    print("matchObj.group(0) : ", matchObj.group(0))
     print("matchObj.group(1) : ", matchObj.group(1))
     print("matchObj.group(2) : ", matchObj.group(2))
     print("matchObj.groups() : ", matchObj.groups())
@@ -64,6 +65,7 @@ if matchObj:
 else:
     print("No match!!")
 # matchObj.group() :  Cats are smarter than dogs
+# matchObj.group(0) :  Cats are smarter than dogs
 # matchObj.group(1) :  Cats
 # matchObj.group(2) :  smarter
 # matchObj.groups() :  ('Cats', 'smarter')

@@ -1,20 +1,11 @@
 """
-Capitalizes the first letter of a string.
+Capitalizes the first letter of every word in a string.
 """
 
 
-def capitalize(s, lower_rest=False):
-    # Omit the lower_rest parameter to keep the rest of the string intact,
-    # or set it to True to convert to lowercase.
-    return ''.join([s[0].upper(), (s[1:].lower() if lower_rest else s[1:])])
+def capitalize_every_word(s):
+    return s.title()
 
 
-print(capitalize('fooBar'))
-# >>> 'FooBar'
-print(capitalize('fooBar', True))
-# >>> 'Foobar'
-
-# -------------------- more --------------------
-# title(): Capitalizes the first letter of every word in a string.
-print('hello world!'.title())
+print(capitalize_every_word('hello world!'))
 # >>> 'Hello World!'
