@@ -23,8 +23,8 @@ def mod(n, m):
 
 
 print(mod(100, 7))  # 2
-mod_by_100 = partial(mod, 50)  # replace the first arg (n) with 100
-print(mod_by_100(7))  # 1
+mod_by_50 = partial(mod, 50)  # replace the first arg (n) with 100
+print(mod_by_50(7))  # 1
 
 # 2. keyword args
 bin2dec = partial(int, base=2)  # replace the keyword arg (base)
@@ -46,4 +46,4 @@ def f(a, b, c, d, x):
 fn1 = partial(f, 3, 1, 4, 2)  # fn has only one arg (x)
 print(fn1(5))  # x = 5
 fn2 = partial(f, b=2, d=6)  # fn has three args (a, c, x)
-print(fn2(a=3, c=4, x=5))
+print(fn2(a=3, c=4, x=5))  # must be assigned with key=value

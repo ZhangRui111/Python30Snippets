@@ -15,6 +15,8 @@ p = Point(2, 4)
 print(p.x, p.y)
 
 # -------------------- more --------------------
+print('-' * 40)
+
 # 1. the main difference being that values stored in a namedtuple can be
 # accessed using field names instead of indexes.
 # 2. three ways to assign valid field names
@@ -33,6 +35,7 @@ print(p.x, p.y)
 print("The namedtuple with default values:")
 ThreeDimsPoint = namedtuple('ThreeDimsPoint', ['x', 'y', 'z'],
                             defaults=[10, 20, 30])
+print("demo with 3 defaults")
 p = ThreeDimsPoint()
 print(p.x, p.y, p.z)
 p = ThreeDimsPoint(1)
@@ -42,6 +45,7 @@ print(p.x, p.y, p.z)
 # namedtuple has two default values, at least one argument 'x' is required.
 ThreeDimsPoint = namedtuple('ThreeDimsPoint', ['x', 'y', 'z'],
                             defaults=[20, 30])
+print("demo with 2 defaults")
 p = ThreeDimsPoint(1)
 print(p.x, p.y, p.z)
 p = ThreeDimsPoint(1, 2)
@@ -49,6 +53,7 @@ print(p.x, p.y, p.z)
 # namedtuple has one default values, at least two argument 'x' & 'y are
 # required.
 ThreeDimsPoint = namedtuple('ThreeDimsPoint', ['x', 'y', 'z'], defaults=[30])
+print("demo with 1 defaults")
 p = ThreeDimsPoint(1, 2)
 print(p.x, p.y, p.z)
 

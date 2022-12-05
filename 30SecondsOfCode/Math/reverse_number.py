@@ -10,11 +10,12 @@ def reverse_number_1(num):
     num = abs(num)
 
     rev_num = str(num)[::-1]
+
     # rev_num = [c for c in str(num)]
     # rev_num.reverse()
     # rev_num = "".join(rev_num)
 
-    return -float(str(rev_num)) if neg else float(str(rev_num))
+    return -float(rev_num) if neg else float(rev_num)
 
 
 def reverse_number_2(n):

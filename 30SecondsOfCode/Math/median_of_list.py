@@ -12,6 +12,10 @@ def median(obj: list):
         return obj[int((len_obj - 1) / 2)]
 
 
+print(median([1]))
+# >>> 1
+print(median([1, 2]))
+# >>> 1.5
 print(median([1, 2, 3]))
 # >>> 2.0
 print(median([1, 2, 3, 4]))

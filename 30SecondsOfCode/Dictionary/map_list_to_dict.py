@@ -7,7 +7,7 @@ of the function as the value.
 
 def map_list_to_dict(obj: list, fn):
     # return {key: value for key, value in zip(lst, list(map(fn, lst)))}
-    return dict(zip(obj, list(map(fn, obj))))
+    return dict(zip(obj, map(fn, obj)))
 
 
 res = map_list_to_dict([1, 2, 3], lambda x: x * x)

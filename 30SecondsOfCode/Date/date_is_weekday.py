@@ -1,7 +1,6 @@
 """
 Checks if the given date is a weekday.
 """
-import datetime
 from datetime import date
 
 
@@ -17,4 +16,4 @@ print(date_is_weekday(date(2022, 12, 2)))
 # -------------------- more --------------------
 # 1. date.weekday(): Return day of the week, where
 # Monday == 0 ... Sunday == 6.
-# 2. datetime is the sub-class of date
+# 2. datetime.weekday(): datetime is the sub-class of date,

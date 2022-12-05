@@ -14,8 +14,7 @@ c = {'min': 50}
 try:
     res = a['min'] + b['min'] + c['min']
 except KeyError as err_info:
-    print("throws KeyError")
-    print(err_info)
+    print("throws KeyError: {}".format(err_info))
 else:
     print(res)
 

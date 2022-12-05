@@ -5,6 +5,8 @@ def rgb_to_hex(r, g, b):
 print(rgb_to_hex(255, 165, 1))  # 'FFA501'
 
 # -------------------- more --------------------
+print('-' * 40)
+
 # str.format()
 # 1. zero-padded: "{:0[length][type]}".format()
 # 2. data type

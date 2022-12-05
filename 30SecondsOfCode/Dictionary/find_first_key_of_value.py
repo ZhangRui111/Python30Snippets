@@ -3,7 +3,7 @@ Finds the first key in the provided dictionary that has the given value.
 """
 
 
-def find_key_of_value(obj: dict, val):
+def find_first_key_of_value(obj: dict, val):
     return next(k for k, v in obj.items() if v == val)
 
 
@@ -14,7 +14,7 @@ ages = {
     'Anna': 9,
     'Jerry': 11,
 }
-res = find_key_of_value(ages, 11)
+res = find_first_key_of_value(ages, 11)
 print(res)
 # >>> 'Isabel'
 

@@ -19,4 +19,30 @@ multiply_and_add_5_and_sub_2 = compose(sub2, add5, multiply)
 print(multiply_and_add_5_and_sub_2(5, 2))  # 5 * 2 + 5 - 2 --> 13
 
 # -------------------- more --------------------
-# The usage of reduce: Dictionary/get_nested_value.py
+print('-' * 40)
+
+# 1. The usage of reduce: Dictionary/get_nested_value.py
+# 2. double lambda --> generate a function that returns a function, e.g.,
+#    the following two demos are identical functionally.
+
+
+f1 = lambda x: x + 1
+f2 = lambda x, y: x + y
+
+# demo 1
+compose_fn1 = lambda f, g: lambda *args: f(g(*args))
+fn1 = compose_fn1(f1, f2)
+
+
+# demo 2
+def compose_fn2(f, g):
+    def fn(*args):
+        return f(g(*args))
+    return fn
+
+
+fn2 = compose_fn2(f1, f2)
+
+# result
+print(fn1(1, 2))
+print(fn2(1, 2))

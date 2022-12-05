@@ -16,12 +16,14 @@ print(digitize_1(123))  # [1, 2, 3]
 print(digitize_2(123))  # [1, 2, 3]
 
 # -------------------- more --------------------
+print('-' * 40)
+
 # map() function returns a map object(which is an iterator) of the
 # results after applying the given function to each item of a given
 # iterable (list, tuple etc.)
 # Syntax :
 #     map(fun, iter)
-# NOTE : You can pass one or more iterable to the map() function.
+# NOTE : You can pass one or multiple iterables to the map() function.
 numbers1 = [1, 2, 3]
 numbers2 = [4, 5, 6]
 
