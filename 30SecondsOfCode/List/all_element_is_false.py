@@ -4,12 +4,10 @@ Checks if the provided function returns False for every element in the list.
 
 
 def all_is_false_1(obj: list, fn=lambda x: x):
-    """ My solution """
     return not list(filter(None, map(fn, obj)))
 
 
 def all_is_false_2(obj: list, fn=lambda x: x):
-    """ My solution """
     return all([not fn(item) for item in obj])
 
 

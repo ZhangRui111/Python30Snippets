@@ -10,7 +10,6 @@ def find_first_matching_index_0(obj: list, fn):
 
 
 def find_first_matching_index_1(obj: list, fn):
-    """ My solution """
     return next(i for i, item in enumerate(obj) if fn(item))
 
 

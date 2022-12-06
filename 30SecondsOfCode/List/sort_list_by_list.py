@@ -20,7 +20,9 @@ def sort_by_indexes_2(lst: list, indexes: list, reverse: bool = False):
 
 a = ['eggs', 'bread', 'oranges', 'jam', 'apples', 'milk']
 b = [3, 2, 6, 4, 1, 5]
+print(sort_by_indexes_1(a, b))
+print(sort_by_indexes_1(a, b, True))
 print(sort_by_indexes_2(a, b))
-# >>> ['apples', 'bread', 'eggs', 'jam', 'milk', 'oranges']
 print(sort_by_indexes_2(a, b, True))
+# >>> ['apples', 'bread', 'eggs', 'jam', 'milk', 'oranges']
 # >>> ['oranges', 'milk', 'jam', 'eggs', 'bread', 'apples']

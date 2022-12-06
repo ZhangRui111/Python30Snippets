@@ -1,5 +1,5 @@
 """
-Returns a list with n elements removed from the right.
+Returns a list with n elements removed from the left.
 """
 
 

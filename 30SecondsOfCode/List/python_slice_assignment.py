@@ -42,7 +42,7 @@ nums[:] = [4, 2]     # [4, 2] (replace whole list with a new one)
 # slice assignment depends on the sign of the step, i.e., negative step means
 # slice assignment in reverse.
 
-print("Slice assignment with negative step")
+print("Slice assignment with non-one step")
 
 try:
     nums = [1, 2, 3, 4, 5]
