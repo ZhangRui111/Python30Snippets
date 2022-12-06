@@ -5,7 +5,6 @@ from itertools import chain
 
 
 def flatten_1(obj: list):
-    """ My solution """
     return list(chain.from_iterable(obj))
 
 

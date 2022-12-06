@@ -4,7 +4,6 @@ Clamps num within the inclusive range specified by the boundary values.
 
 
 def clamp_number_1(num, a, b):
-    """ My solution """
     a, b = min(a, b), max(a, b)
     if a <= num <= b:
         return num

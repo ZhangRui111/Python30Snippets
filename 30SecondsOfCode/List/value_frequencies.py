@@ -6,12 +6,10 @@ from collections import Counter, defaultdict
 
 
 def frequencies_1(obj: list):
-    """ My solution """
     return dict(Counter(obj))
 
 
 def frequencies_2(obj: list):
-    """ My solution """
     freq = defaultdict(int)
     for val in obj:
         freq[val] += 1

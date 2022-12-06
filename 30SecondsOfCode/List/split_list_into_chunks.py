@@ -5,7 +5,6 @@ from math import ceil
 
 
 def split_into_chunks_1(obj: list, size: int):
-    """ My solution """
     return [obj[i: i + size] for i in range(0, len(obj), size)]
 
 

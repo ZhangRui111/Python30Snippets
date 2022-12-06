@@ -6,7 +6,7 @@ from operator import mul
 
 
 def factorial_1(num: int):
-    """ My solution: reduce """
+    """ reduce """
     if not ((num >= 0) and isinstance(num, int)):
         raise Exception("Number can't be floating point or negative.")
 

@@ -5,7 +5,6 @@ of the input lists based on their positions.
 
 
 def merge_lists_1(*objs: list, fill_value=None):
-    """ My solution """
     max_len = max(map(len, objs))
     for o in objs:
         o += [fill_value] * (max_len - len(o))

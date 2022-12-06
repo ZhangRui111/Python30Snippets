@@ -5,10 +5,8 @@ property on a given dictionary.
 
 
 def check_prop(fn, prop):
-    """
-    Return a function with one argument (obj).
-    The role of the function depends on fn & prop.
-    """
+    # Return a function with one argument (obj).
+    # The role of the function depends on fn & prop.
     return lambda obj: fn(obj[prop])
 
 

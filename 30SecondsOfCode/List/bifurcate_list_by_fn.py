@@ -4,7 +4,6 @@ Bifurcate list based on function.
 
 
 def bifurcate_by_fn_1(obj: list, fn):
-    """ My solution """
     res = [[], []]
     for v, j in zip(obj, map(fn, obj)):
         res[0].append(v) if j else res[1].append(v)

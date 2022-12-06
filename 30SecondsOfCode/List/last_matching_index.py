@@ -5,7 +5,6 @@ provided testing function.
 
 
 def find_last_matching_index_0(obj: list, fn):
-    """ My solution """
     return len(obj) - 1 - list(map(fn, reversed(obj))).index(True)
 
 

@@ -4,7 +4,6 @@ Returns a list of elements that exist in both lists.
 
 
 def list_intersection_1(obj1: list, obj2: list):
-    """ My solution """
     return list(set(obj1) & set(obj2))
 
 

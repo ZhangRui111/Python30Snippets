@@ -1,3 +1,8 @@
+"""
+Converts the values of RGB components to a hexadecimal color code.
+"""
+
+
 def rgb_to_hex(r, g, b):
     return ("{:02X}" * 3).format(r, g, b)
 

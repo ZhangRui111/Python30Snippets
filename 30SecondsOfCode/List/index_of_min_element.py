@@ -5,7 +5,6 @@ Returns the index of the element with the minimum value in a list.
 
 def min_element_index_1(obj: list):
     """
-    My solution.
     Extensible to find the index of the n-th minimum element.
     i.e., sorted(zip(obj, range(len(obj))), reverse=False)[n][1]
     """

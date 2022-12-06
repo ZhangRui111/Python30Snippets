@@ -5,7 +5,6 @@ from collections import Counter
 
 
 def filter_non_unique_1(obj: list):
-    """ My solution """
     _obj = set(obj)
     return [i for i in _obj if obj.count(i) != 1]
 

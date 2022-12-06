@@ -5,12 +5,10 @@ from collections import Counter
 
 
 def have_same_contents_1(obj1: list, obj2: list):
-    """ My solution """
     return sorted(obj1) == sorted(obj2)
 
 
 def have_same_contents_2(obj1: list, obj2: list):
-    """ My solution 2 """
     return Counter(obj1) == Counter(obj2)
 
 

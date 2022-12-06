@@ -5,7 +5,6 @@ provided testing function.
 
 
 def find_first_matching_index_0(obj: list, fn):
-    """ My solution """
     return list(map(fn, obj)).index(True)
 
 

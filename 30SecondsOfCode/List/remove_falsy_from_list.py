@@ -4,7 +4,6 @@ Removes falsy values (False, None, 0, and "") from a list.
 
 
 def compact_list_1(obj: list):
-    """ My solution """
     return [item for item in obj if item]
 
 

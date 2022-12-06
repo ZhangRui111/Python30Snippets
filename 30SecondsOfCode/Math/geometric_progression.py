@@ -6,7 +6,6 @@ from math import floor, log
 
 
 def geometric_progression_1(end, start=1, step=2):
-    """ My solution """
     res = []
     n = start
     while n <= end:

@@ -5,7 +5,6 @@ from math import copysign
 
 
 def reverse_number_1(num):
-    """ My solution """
     neg = True if num < 0 else False
     num = abs(num)
 

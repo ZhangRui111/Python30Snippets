@@ -5,7 +5,6 @@ import numpy as np
 
 
 def sort_by_indexes_1(lst: list, indexes: list, reverse: bool = False):
-    """ My solution """
     _indexes = np.asarray(indexes).argsort().tolist()
     res = [lst[i] for i in _indexes]
     if reverse:

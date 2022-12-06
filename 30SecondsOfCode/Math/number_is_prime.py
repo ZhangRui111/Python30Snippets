@@ -5,7 +5,6 @@ from math import sqrt
 
 
 def is_prime_1(num: int):
-    """ My solution """
     if num <= 1:
         return False
 
@@ -17,7 +16,6 @@ def is_prime_1(num: int):
 
 
 def is_prime_2(num: int):
-    """ Suggested solution """
     if num <= 1 or (num % 2 == 0 and num > 2):
         return False
 

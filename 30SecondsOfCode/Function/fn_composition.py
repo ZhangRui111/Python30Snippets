@@ -1,14 +1,13 @@
 """
 Performs right-to-left function composition.
-
-- Use functools.reduce() to perform right-to-left function composition.
-- The last (rightmost) function can accept one or more arguments; the
-  remaining functions must be unary.
 """
 from functools import reduce
 
 
 def compose(*fns):
+    # - Use functools.reduce() to perform right-to-left function composition.
+    # - The last (rightmost) function can accept one or more arguments; the
+    #   remaining functions must be unary.
     return reduce(lambda f, g: lambda *args: f(g(*args)), fns)
 
 

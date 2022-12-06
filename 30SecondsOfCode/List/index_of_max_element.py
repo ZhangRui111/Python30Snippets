@@ -5,7 +5,6 @@ Returns the index of the element with the maximum value in a list.
 
 def max_element_index_1(obj: list):
     """
-    My solution.
     Extensible to find the index of the n-th maximum element.
     i.e., sorted(zip(obj, range(len(obj))), reverse=True)[n][1]
     """

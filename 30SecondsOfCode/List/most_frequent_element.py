@@ -5,7 +5,6 @@ from collections import Counter
 
 
 def most_frequent_1(obj: list):
-    """ My solution """
     return Counter(obj).most_common()[0][0]
 
 
